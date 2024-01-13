@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@800&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans; /* Set your preferred font-family */
+    background-color: #A795FF; /* Set your preferred background color */
+}
+
+
+#TaskPage {
+    all: initial;
+}
+
+
+#Taskpage {
+    background-color: #A795FF;
+    width: 100vw;
+    height: 100vh; 
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+#Taskpage #MainContainer {
+    width: 82vw; 
+    height: 82vh; 
+    background-color: #5E4ABC;
+    border-radius: 17px; 
+    display: flex; 
+    align-items: flex-start; 
+    /* margin-top: 10vh; */
+}
+
+#MainContainer .categoriesContainer {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+#MainContainer .categoriesContainer .categoryBtn {
+    display: block; 
+    /* width: 200px;  */
+    background-color: #2B1887;
+    color: white; 
+    font-family: 'Inter'; 
+    font-weight: 600; 
+    font-size: 18px; 
+    margin-top: 8px; 
+    padding: 12px 8px;
+   /* height: 40px;  */
+    border: none !important; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+#leftSide {
+    margin: 0.6vh 1vw; 
+    width: 18vw; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+#leftSide h1 {
+    display: block; 
+    color: white; 
+    font-size: 25px;  
+}
+
+#verticalWhiteBar {
+    background-color: white; 
+    width: 10px; 
+    height: 100%; 
+    /* margin-left: 2vw;  */
+}
+
+
+
+#rightSide {
+    margin: 1.5vh 1vw;
+    /* margin-left: 3vw;  */
+    width: 65%;
+    gap: 15px;
+    max-width: 65%;
+    display: flex; 
+    justify-content: flex-start; 
+    overflow-x: scroll; 
+    /* margin-top: 5vh;  */
+}
+
+#rightSide .taskContainer {
+    min-width: 40%; 
+    height: 73vh; 
+    background-color: #D5CCFF; 
+    /* margin-right: 24px;  */
+    border-radius: 10px; 
+    font-family: 'DM Sans'; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    overflow-y: scroll; 
+    overflow-x:hidden; 
+}
+
+.headerTaskContainer {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px;
+}
+
+
+#rightSide .taskContainer h2 {
+    display: block; 
+    margin-right: 10px; 
+    color: #2B1887;     
+    /* font-family: 'Sniglet', cursive; */
+}
+
+#rightSide .taskContainer .addTask {
+    display: flex; 
+    border: none; 
+    margin: none; 
+    color: white; 
+    font-size: 12px; 
+    font-weight: 800; 
+    background-color: #2B1887;
+    min-width: 75px; 
+    padding: 8px 12px;
+    /* height: 25px;  */
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+    margin-bottom: 0;  
+    cursor: pointer; 
+}
+
+#rightSide .taskContainer .taskBox {
+    background-color: #F4F2FF; 
+    width:  93%; 
+    /* min-height: 35%;  */
+    margin-bottom: 13px; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+#rightSide .taskContainer .taskBox .dueDate {
+    display: flex; 
+    margin: none; 
+    margin-left: 1vw; 
+    color: white; 
+    font-size: 12px; 
+    font-weight: 800; 
+    background-color: #2B1887;
+    min-width: 75px; 
+    height: 20px; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 4px;
+    margin-bottom: 0;  
+}
+
+
+#rightSide .taskContainer .taskBox .taskname{
+    display: block; 
+    margin: 0; 
+    margin-top: 1vh; 
+    margin-left: 1.1vw; 
+    color: black;
+    font-weight: 600 !important; 
+    font-size: 18px; 
+
+}
+
+#rightSide .taskContainer .taskBox .taskDescription {
+    display: block; 
+    margin: none; 
+    margin-left: 1vw; 
+    color: #797979; 
+    font-family: 'DM Sans'; 
+    font-size: 14px;
+    max-height: 80%; 
+    overflow-y: scroll; 
+    scrollbar-color: #2d2b36;;
+    scrollbar-width: 10px;
+}
+
+#rightSide .taskContainer .taskBox .removeTaskBtn {
+    display: block; 
+    border: none; 
+    background-color: #F4F2FF;
+    /* width: 40px;  */
+    /* height: 30px;  */
+    cursor: pointer; 
+}
+
+#rightSide .taskContainer .taskBox .topHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+#rightSide .taskContainer .taskBox .custom-icon-style {
+    color: #2B1887 !important; 
+    width: 50px;
+    /* width: 100px!important;  */
+    height: 50px!important; 
+    font-weight: bold; /* Set the font weight to make the icon thicker */
+
+}
+
+.popUp {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    z-index: 3;  
+    backdrop-filter: blur(10px);
+}
+
+.popUp .popUpContainer h2{
+    /* font-family: "Sniglet", cursive;  */
+    color: #2B1887; 
+}
+
+.popUp .popUpContainer {
+    position: fixed; 
+    z-index: 4; 
+    top: 20%; 
+    left: 37%;
+    border-radius: 20px;
+    padding: 0px 0px 20px 0px;
+    width: 400px;
+    /* height: 400px;  */
+    background-color: white; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.confirmAddNewList{
+    display: flex; 
+    border: none; 
+    margin: none; 
+    color: white; 
+    font-size: 12px; 
+    font-weight: 800; 
+    background-color: #2B1887;
+    width: 80%; 
+    height: 30px; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+    margin-bottom: 0;  
+    cursor: pointer; 
+}
+.popUp .popUpContainer .confirmAddNewTask {
+    display: flex; 
+    border: none; 
+    margin: none; 
+    color: white; 
+    font-size: 12px; 
+    font-weight: 800; 
+    background-color: #2B1887;
+    width: 80%; 
+    height: 30px; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 10px;
+    margin-bottom: 0;  
+    cursor: pointer; 
+}
+
+.popUp .popUpContainer input{
+    width: 75%; 
+    margin-bottom: 15px; 
+}
+
+.popUp .popUpContainer textarea {
+    width: 80%; 
+    height: 100px; 
+    margin-bottom: 10px; 
+}
+
+.headerTaskContainerPopup {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; 
+    margin-left: 50px; 
+}
+
+.popUp .popUpContainer .removeTaskBtn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: none; 
+    background-color: black;
+    width: 100px; 
+    height: 50px; 
+    background-color: white; 
+    cursor: pointer; 
+
+}
+
+.popUp .popUpContainer .custom-icon-style {
+    color: #2B1887 !important; 
+    width: 100px; 
+    height: 50px; 
+    font-weight: bold; /* Set the font weight to make the icon thicker */
+}
+.activeCategoryDisplay{
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color:#2B1887;
+    margin: 0px;
+    text-transform: uppercase;
+}
+.addNewCatBtn {
+    background-color: #2B1887;
+    color: white; 
+    margin-top: 10px; 
+    /* width: 200px; */
+    /* height: 55px;  */
+    border: none; 
+    /* font-family: 'Inter';  */
+    font-weight: 600; 
+    font-size: 18px; 
+    padding: 12px 8px;
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+.addNewListBtn {
+    min-width: 200px;
+    height: 50px; 
+    font-family: 'DM Sans'; 
+    font-weight: 800; 
+    font-size: 15px; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    border: none; 
+    background: #D5CCFF;
+    /* margin-top: 150px;  */
+}
+
+input.checkbox{
+    /* width: 20px; */
+    margin-left: 1vw;
+}
+input[type="checkbox"] {
+    margin-top: 12px;
+    width: 20px;
+    height: 20px; 
+    position: relative;
+  }

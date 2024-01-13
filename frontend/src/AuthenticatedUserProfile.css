@@ -1,0 +1,34 @@
+
+/* body{
+    background: #A795FF;
+} */
+
+#UserContainer body{
+    background: #A795FF;
+}
+
+#UserContainer h1{
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 60% */
+    letter-spacing: -0.8px;
+}
+
+#UserContainer h2{
+    padding: 0px;
+    line-height: 0px;
+}
+
+
+#UserContainer .ProfileBox{
+    background: #2B1887;
+    border-radius: 20px;
+    padding: 40px 40px; 
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+    width: 40%;
+}
+
